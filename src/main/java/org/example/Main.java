@@ -64,6 +64,10 @@ public class Main {
 
         System.out.println("\n=== Updated Product Details ===");
         product.displayDetails();
+        System.out.println("=========================================================================");
+        Rectangle rect=new Rectangle(15,56);
+        rect.displayDetails();
+        System.out.println("=========================================================================");
 
     }
 }
