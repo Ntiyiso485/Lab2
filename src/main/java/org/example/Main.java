@@ -35,6 +35,35 @@ public class Main {
         reverse.reverse();
         System.out.println("");
         System.out.println("=========================================================================");
+        StudentClass studClass=new StudentClass("Ntiyiso","220714241",85);
+        studClass.displayDetails();
+        if (studClass.hasPassed(studClass.mark)) {
+            System.out.println("Status: Passed");
+        } else {
+            System.out.println("Status: Failed");
+        }
+        System.out.println("=========================================================================");
+        BankAccount acc=new BankAccount("Chauke","1677003152",5000);
+        acc.deposit(2000);
+        acc.withdraw(500);
+        acc.getBalance();
+        System.out.println("=========================================================================");
+        ProductInventory product = new ProductInventory(101, "Keyboard", 250.00, 10);
+
+        System.out.println("=== Initial Product Details ===");
+        product.displayDetails();
+
+        System.out.println("\n=== Adding Stock ===");
+        product.addStock(5);
+
+        System.out.println("\n=== Selling Products ===");
+        product.sellProduct(3);
+
+        System.out.println("\n=== Attempting Invalid Sale ===");
+        product.sellProduct(20);
+
+        System.out.println("\n=== Updated Product Details ===");
+        product.displayDetails();
 
     }
 }
